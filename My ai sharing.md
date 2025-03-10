@@ -38,8 +38,11 @@ api用在哪？ <br>
 可参考deepseek官方建议：<https://github.com/deepseek-ai/awesome-deepseek-integration/blob/main/README_cn.md> <br>
 
 我在用的： <br>
-Cherry studio：<https://github.com/CherryHQ/cherry-studio> <br>
-chatGPTBox：<https://github.com/josStorer/chatGPTBox> <br>
+Cherry studio (Windows/Mac/Linux)：<https://github.com/CherryHQ/cherry-studio> <br>
+chatGPTBox (浏览器插件): <https://github.com/josStorer/chatGPTBox> <br>
+PDFMathTranslate (pdf论文翻译): <https://github.com/Byaidu/PDFMathTranslate> <br>
+gpt-assistant-android (Android): <https://github.com/Skythinker616/gpt-assistant-android> <br>
+
 我的ai模型推荐： <br>
 复杂代码：Claude 3.7 Sonnet 思考模式 ； DeepSeek-R1 ; openai o1 <br>
 日常对话：chatgpt-4o-latest(多模态支持) ; DeepSeek-V3 （图片目前只支持ocr识别文字）<br>
