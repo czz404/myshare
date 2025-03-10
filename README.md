@@ -7,3 +7,4 @@ For my friends in cuhksz
 
 # Updates
 - [Mar. 6 2025] My ai sharing - v0.1
+- [Mar. 10 2025] Update my AI Integrations - v0.11
