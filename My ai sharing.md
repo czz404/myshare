@@ -42,6 +42,7 @@ Cherry studio (Windows/Mac/Linux)：<https://github.com/CherryHQ/cherry-studio> 
 chatGPTBox (浏览器插件): <https://github.com/josStorer/chatGPTBox> <br>
 PDFMathTranslate (pdf论文翻译): <https://github.com/Byaidu/PDFMathTranslate> <br>
 gpt-assistant-android (Android): <https://github.com/Skythinker616/gpt-assistant-android> <br>
+DictTango (Android): <https://github.com/Jimex/DictTango-Android> <br>
 
 我的ai模型推荐： <br>
 复杂代码：Claude 3.7 Sonnet 思考模式 ； DeepSeek-R1 ; openai o1 <br>
