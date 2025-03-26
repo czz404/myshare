@@ -59,13 +59,12 @@ DictTango (Android): <https://github.com/Jimex/DictTango-Android> <br>
 - 缺点：语法严格，ai直接生成的mermaid代码容易有错误 <br>
 
 我的使用体验：常见错误出现在文本部分括号干扰，需要在文本两侧加英文引号 <br>
-eg: ai生成B --> C([Integrative Analysis<br>(miRNA & DNA Methylation)]) <br>
-修改为B --> C(["Integrative Analysis<br>(miRNA & DNA Methylation)"]) <br>
+eg: ai生成`B --> C([Integrative Analysis<br>(miRNA & DNA Methylation)]) `<br>
+修改为`B --> C(["Integrative Analysis<br>(miRNA & DNA Methylation)"]) `<br>
 语法检测与在线预览：<https://mermaid.live/> <br>
 
 Prompt (来自linux.do论坛Monster Dump)：<br>
 英文Prompt：<br>
-
 ```
 Visualization: Enhance understanding by integrating visualization. 
 - Use mermaid.js diagram, and it must be ensured that the syntax is correct and verified.
@@ -76,9 +75,7 @@ Visualization: Enhance understanding by integrating visualization.
     2. Always use double quotes in flowchart edges (arrows or lines) labels text. for example: |"text"|.
     3. For numbered steps, use (1) instead of 1.
 ```
-
 中文Prompt：<br>
-
 ```
 可视化: 通过整合可视化来增强理解能力。
 - 要求使用 Mermaid.js diagram, 按需选择图表类型，必须确保语法正确
