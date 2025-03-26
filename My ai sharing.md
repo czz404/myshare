@@ -38,6 +38,8 @@ GitHub学生包教程（可在 vscode GitHub copilot 使用辅助编程）： <b
 api用在哪？ <br>
 可参考deepseek官方建议：<https://github.com/deepseek-ai/awesome-deepseek-integration/blob/main/README_cn.md> <br>
 
+## 个人推荐
+
 我在用的： <br>
 Cherry studio (Windows/Mac/Linux)：<https://github.com/CherryHQ/cherry-studio> <br>
 chatGPTBox (浏览器插件): <https://github.com/josStorer/chatGPTBox> <br>
@@ -48,6 +50,37 @@ DictTango (Android): <https://github.com/Jimex/DictTango-Android> <br>
 我的ai模型推荐： <br>
 复杂代码：Claude 3.7 Sonnet 思考模式 ； DeepSeek-R1 ; openai o1 <br>
 日常对话：chatgpt-4o-latest(多模态支持) ; DeepSeek-V3 （图片目前只支持ocr识别文字）<br>
+
+## AI制图
+
+### Mermaid
+基于 JavaScript 的图表绘制工具，可生成多种类型的图表 <br>
+- 优点：使用广泛，可以直接粘贴导入draw.io, iauto等绘图软件进行编辑和保存 <br>
+- 缺点：语法严格，ai直接生成的mermaid代码容易有错误 <br>
+
+我的使用体验：常见错误出现在文本部分括号干扰，需要在文本两侧加英文引号 <br>
+eg: ai生成B --> C([Integrative Analysis<br>(miRNA & DNA Methylation)]) <br>
+修改为B --> C(["Integrative Analysis<br>(miRNA & DNA Methylation)"]) <br>
+语法检测与在线预览：<https://mermaid.live/> <br>
+
+Prompt (来自linux.do论坛Monster Dump)：<br>
+英文Prompt：<br>
+``Visualization: Enhance understanding by integrating visualization. 
+- Use mermaid.js diagram, and it must be ensured that the syntax is correct and verified.
+- Additionally the diagram should be clear, easy to understand, and beautiful.
+- Choose the type of diagram that is most comprehensible in the context.
+- The returned mermaid syntax must follow the following requirements. 
+    1. If the node is flowchart node, always use double quotes around nodes (geometric shapes) text. for example: id["text"].
+    2. Always use double quotes in flowchart edges (arrows or lines) labels text. for example: |"text"|.
+    3. For numbered steps, use (1) instead of 1.``
+中文Prompt：<br>
+``可视化: 通过整合可视化来增强理解能力。
+- 要求使用 Mermaid.js diagram, 按需选择图表类型，必须确保语法正确
+- 此外图表应该是美观和清晰，易于理解
+- Mermaid.js 语法要遵守:
+  1. 如果是 flowchart 节点，节点文本总是使用双引号包住：id["节点名称"]；
+  2. 如果是 flowchart 节点，边缘标签中总是使用双引号包住：|"标签文本"|；
+  3. 对于编号步骤，使用 (1) 而不是 1. 。``
 
 欢迎大家指正和补充！<br>
 
