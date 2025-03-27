@@ -96,7 +96,7 @@ Graphviz是一个由AT&T实验室启动的开源工具包，用于绘制DOT语�
 来自linux.do 论坛 Mozi 推荐 <br>
 生成复杂流程图不易报错
 Prompt:
-[mozi](https://www.yeahhe.online/OneDriveShare/%E5%B0%8F%E8%99%8E%E4%BC%9A%E4%BA%AB/%F0%9F%93%9A%E7%94%B5%E5%AD%90%E4%B9%A6/%F0%9F%92%A1AI%E6%8F%90%E7%A4%BA%E8%AF%8D/Graphviz%E5%9B%BE%E8%A1%A8.html) 
+[mozi](https://www.yeahhe.online/OneDriveShare/%E5%B0%8F%E8%99%8E%E4%BC%9A%E4%BA%AB/%F0%9F%93%9A%E7%94%B5%E5%AD%90%E4%B9%A6/%F0%9F%92%A1AI%E6%8F%90%E7%A4%BA%E8%AF%8D/Graphviz%E5%9B%BE%E8%A1%A8.html) <br>
 在线预览编辑和分享: <https://edotor.net/> <br>
 
 
