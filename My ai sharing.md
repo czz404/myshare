@@ -88,7 +88,7 @@ Visualization: Enhance understanding by integrating visualization.
 ### svg
 SVG stands for Scalable Vector Graphics. <br>
 cherry-studio/deepseek官网/claude官网 可以便捷实现svg预览 <br>
-Prompt: 微信公众号 李继刚
+Prompt: 微信公众号 李继刚 <br>
 在线修改以及导出svg： <https://svgedit.netlify.app/editor/index.html> <br>
 
 ### Graphviz
