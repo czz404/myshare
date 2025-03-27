@@ -28,7 +28,7 @@ GitHub学生包教程（可在 vscode GitHub copilot 使用辅助编程）： <b
 1.直连 2.商用避免“降智”3.支持在其他软件中调用ai的能力（翻译，润色，代码辅助，概括文章…） <br>
 
 付费中转站1:<https://burn.hair/> <br>
-（Azure openai ，每天签到送少量额度，使用GitHub账户登录） <br>
+（Azure openai ，使用GitHub账户登录） <br>
 文档：<https://github.com/BurnHair/docs> <br>
 
 付费中转站2:<https://api.oaipro.com/> <br>
@@ -58,7 +58,7 @@ DictTango (Android): <https://github.com/Jimex/DictTango-Android> <br>
 - 优点：使用广泛，可以直接粘贴导入draw.io, iauto等绘图软件进行编辑和保存 <br>
 - 缺点：语法严格，ai直接生成的mermaid代码容易有错误 <br>
 
-我的使用体验：常见错误出现在文本部分括号干扰，需要在文本两侧加英文引号 <br>
+我的使用体验：可以方便的生成流程图，但常见错误出现在文本部分括号干扰，需要在文本两侧加英文引号 <br>
 eg: ai生成`B --> C([Integrative Analysis<br>(miRNA & DNA Methylation)]) `<br>
 修改为`B --> C(["Integrative Analysis<br>(miRNA & DNA Methylation)"]) `<br>
 语法检测与在线预览：<https://mermaid.live/> <br>
@@ -85,6 +85,20 @@ Visualization: Enhance understanding by integrating visualization.
   2. 如果是 flowchart 节点，边缘标签中总是使用双引号包住：|"标签文本"|；
   3. 对于编号步骤，使用 (1) 而不是 1. 。
 ```
+## svg
+SVG stands for Scalable Vector Graphics. <br>
+cherry-studio/deepseek官网/claude官网 可以便捷实现svg预览 <br>
+Prompt: 微信公众号 李继刚
+在线修改以及导出svg： <https://svgedit.netlify.app/editor/index.html> <br>
+
+## Graphviz
+Graphviz是一个由AT&T实验室启动的开源工具包，用于绘制DOT语言脚本描述的图形 <br>
+来自linux.do 论坛 Mozi 推荐 <br>
+生成复杂流程图不易报错
+Prompt: <https://www.yeahhe.online/OneDriveShare/%E5%B0%8F%E8%99%8E%E4%BC%9A%E4%BA%AB/%F0%9F%93%9A%E7%94%B5%E5%AD%90%E4%B9%A6/%F0%9F%92%A1AI%E6%8F%90%E7%A4%BA%E8%AF%8D/Graphviz%E5%9B%BE%E8%A1%A8.html> <br>
+在线预览编辑和分享: <https://edotor.net/> <br>
+
+
 
 欢迎大家指正和补充！<br>
 
