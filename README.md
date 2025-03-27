@@ -10,3 +10,4 @@ For my friends in cuhksz
 - [Mar. 10 2025] Update my AI Integrations - v0.11
 - [Mar. 15 2025] Update free platform - v0.12
 - [Mar. 26 2025] Update mermaid - v0.13
+- [Mar. 27 2025] Update more information about AI Generate pictures - v0.14
