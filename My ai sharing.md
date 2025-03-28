@@ -43,17 +43,22 @@ api用在哪？ <br>
 我在用的： <br>
 Cherry studio (Windows/Mac/Linux)：<https://github.com/CherryHQ/cherry-studio> <br>
 chatGPTBox (浏览器插件): <https://github.com/josStorer/chatGPTBox> <br>
+kiss-translator (浏览器翻译插件)：<https://github.com/fishjar/kiss-translator> <br>
 PDFMathTranslate (pdf论文翻译): <https://github.com/Byaidu/PDFMathTranslate> <br>
 gpt-assistant-android (Android): <https://github.com/Skythinker616/gpt-assistant-android> <br>
-DictTango (Android): <https://github.com/Jimex/DictTango-Android> <br>
+DictTango (Android e-dictionary): <https://github.com/Jimex/DictTango-Android> <br>
 
 我的ai模型推荐： <br>
 复杂代码：Claude 3.7 Sonnet 思考模式 ； DeepSeek-R1 ; openai o1 <br>
 日常对话：chatgpt-4o-latest(多模态支持) ; DeepSeek-V3 （图片目前只支持ocr识别文字）<br>
+翻译：gemini-2.0-flash-lite <br>
 
 ## AI制图
+### 可直接编辑
 
-### Mermaid
+<details>
+
+<summary>#### Mermaid</summary>
 基于 JavaScript 的图表绘制工具，可生成多种类型的图表 <br>
 - 优点：使用广泛，可以直接粘贴导入draw.io, iauto等绘图软件进行编辑和保存 <br>
 - 缺点：语法严格，ai直接生成的mermaid代码容易有错误 <br>
@@ -85,13 +90,15 @@ Visualization: Enhance understanding by integrating visualization.
   2. 如果是 flowchart 节点，边缘标签中总是使用双引号包住：|"标签文本"|；
   3. 对于编号步骤，使用 (1) 而不是 1. 。
 ```
-### svg
+</details>
+
+#### svg
 SVG stands for Scalable Vector Graphics. <br>
 cherry-studio/deepseek官网/claude官网 可以便捷实现svg预览 <br>
 Prompt: 微信公众号 李继刚 <br>
 在线修改以及导出svg： <https://svgedit.netlify.app/editor/index.html> <br>
 
-### Graphviz
+#### Graphviz
 Graphviz是一个由AT&T实验室启动的开源工具包，用于绘制DOT语言脚本描述的图形 <br>
 来自linux.do 论坛 Mozi 推荐 <br>
 生成复杂流程图不易报错 <br>
