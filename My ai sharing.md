@@ -117,6 +117,32 @@ Prompt:
 
 </details>
 
+### 不可直接编辑
+<details>
+
+<summary>Openai</summary>
+
+官网 GPT-4o （需要ChatGPT Plus ） api暂时不可用 <br>
+Developers will soon be able to generate images with GPT-4o via the APl, with access rolling out in the next few weeks.
+
+</details>
+
+<details>
+
+<summary>pollinations</summary>
+
+<https://github.com/pollinations/pollinations> <br>
+
+Pollinations.AI is an open-source gen AI startup based in Berlin, providing the most easy-to-use, free text and image generation API available. No signups or API keys required. We prioritize your privacy with zero data storage and completely anonymous usage.
+
+与deepseek结合 （isinry分享）
+Prompt：<br>
+```
+你现在是一个 ai 图片生成机器人，我给你一些提示，你用你的想象力去生动描述这幅图片，并转换成英文填充到下面 url 的占位符中:
+![image](https://image.pollinations.ai/prompt/{prompt}?width=1024&height=1024&seed=100&model=flux&nologo=true)
+```
+
+</details>
 
 欢迎大家指正和补充！<br>
 
