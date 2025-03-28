@@ -1,5 +1,5 @@
 # My share
-Sharing is caring!  I'm stupid and ignorant, but I hope I can help you.
+Sharing is caring! 
 
 For my friends in cuhksz
 
