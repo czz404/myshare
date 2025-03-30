@@ -74,6 +74,9 @@ eg: ai生成`B --> C([Integrative Analysis<br>(miRNA & DNA Methylation)]) `<br>
 修改为`B --> C(["Integrative Analysis<br>(miRNA & DNA Methylation)"]) `<br>
 语法检测与在线预览：<https://mermaid.live/> <br>
 
+示意图：<br>
+![Mermaid 示意图](pic/mermaideg.png)
+
 Prompt (来自linux.do论坛Monster Dump)：<br>
 英文Prompt：<br>
 ```
@@ -107,6 +110,9 @@ cherry-studio/deepseek官网/claude官网 可以便捷实现svg预览 <br>
 Prompt: 微信公众号 李继刚 <br>
 在线修改以及导出svg： <https://svgedit.netlify.app/editor/index.html> 
 
+示意图：<br>
+![svg 示意图](pic/svgeg.png)
+
 </details>
 
 <details>
@@ -116,6 +122,10 @@ Prompt: 微信公众号 李继刚 <br>
 Graphviz是一个由AT&T实验室启动的开源工具包，用于绘制DOT语言脚本描述的图形 <br>
 来自linux.do 论坛 Mozi 推荐 <br>
 生成复杂流程图不易报错 <br>
+
+示意图：<br>
+![Graphviz 示意图](pic/Graphvizeg.png)
+
 Prompt:
 [mozi](https://www.yeahhe.online/OneDriveShare/%E5%B0%8F%E8%99%8E%E4%BC%9A%E4%BA%AB/%F0%9F%93%9A%E7%94%B5%E5%AD%90%E4%B9%A6/%F0%9F%92%A1AI%E6%8F%90%E7%A4%BA%E8%AF%8D/Graphviz%E5%9B%BE%E8%A1%A8.html) <br>
 在线预览编辑和分享: <https://edotor.net/> 
@@ -127,8 +137,14 @@ Prompt:
 
 <summary>Openai</summary>
 
-官网 GPT-4o （需要ChatGPT Plus ） api暂时不可用 <br>
+官网 GPT-4o （需要ChatGPT Plus ,免费账户有次数和频率限制） api暂时不可用 <br>
 Developers will soon be able to generate images with GPT-4o via the APl, with access rolling out in the next few weeks.
+
+示意图：<br>
+![GPT-4o 示意图](pic/4oeg.png)
+
+可以看出生成一些营销号中无比精致完美的科研图片需要巨量详尽无比的文字描述 <br>
+评语：有这功夫你自己都做出来了 <br>
 
 </details>
 
