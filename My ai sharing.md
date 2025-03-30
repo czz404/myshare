@@ -141,7 +141,7 @@ Prompt:
 Developers will soon be able to generate images with GPT-4o via the APl, with access rolling out in the next few weeks.
 
 示意图：<br>
-![GPT-4o 示意图](pic/4oeg.png)
+![GPT-4o 示意图](pic/4oeg.jpg)
 
 可以看出生成一些营销号中无比精致完美的科研图片需要巨量详尽无比的文字描述 <br>
 评语：有这功夫你自己都做出来了 <br>
