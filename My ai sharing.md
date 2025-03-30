@@ -162,6 +162,8 @@ Prompt：<br>
 你现在是一个 ai 图片生成机器人，我给你一些提示，你用你的想象力去生动描述这幅图片，并转换成英文填充到下面 url 的占位符中:
 ![image](https://image.pollinations.ai/prompt/{prompt}?width=1024&height=1024&seed=100&model=flux&nologo=true)
 ```
+示意图：<br>
+![pollinations 示意图](pic/pollinationseg.png)
 
 </details>
 
