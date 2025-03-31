@@ -146,7 +146,7 @@ Developers will soon be able to generate images with GPT-4o via the APl, with ac
 可以看出生成一些营销号中无比精致完美的科研图片需要巨量详尽无比的文字描述 <br>
 评语：有这功夫你自己都做出来了 <br>
 
-手写笔记风格Prompt:
+手写笔记风格Prompt (Emad分享):
 ```
 write a monologue of your real thoughts on making everything studio ghibli style in fountain pen blue ink, on it scrawl corrections in marker pen, they are unhinged, there are doodles and weird oddities scrawled, you cut out and stick on lots and lots of photo extracts from magazines to show the point!!! sometimes you write on them too
 ```
