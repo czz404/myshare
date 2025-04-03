@@ -10,9 +10,8 @@
 ## 一些ai相关知识介绍
 
 浅显易懂的DeepSeek R1科普文： <https://mazzzystar.com/2025/01/30/chatgpt-to-deepseek-r1-zh/> <br>
-
+B站技术爬爬虾：<https://space.bilibili.com/316183842/dynamic> <br>
 B站港中文李老师的科普视频：<https://space.bilibili.com/605551118/upload/video> <br>
-
 wx公众号：浮之静 ；李继刚 <br>
 
 ## 免费使用建议
