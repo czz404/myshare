@@ -24,7 +24,7 @@ GitHub学生包教程（可在 vscode GitHub copilot 使用辅助编程）： <b
 <https://zhuanlan.zhihu.com/p/578964972>  <br>
 
 免费公益（目前）平台不保证质量： <br>
-<https://www.chatgot.one/> <br>
+<https://www.chatgot.one/>  (疑似已经失效)<br>
 <https://chat.xub.ai/>  (github注册)<br>
 
 ## 付费建议
