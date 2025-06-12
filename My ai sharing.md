@@ -47,7 +47,7 @@ api用在哪？ <br>
 Cherry studio (Windows/Mac/Linux)：<https://github.com/CherryHQ/cherry-studio> <br>
 chatGPTBox (浏览器插件): <https://github.com/josStorer/chatGPTBox> <br>
 kiss-translator (浏览器翻译插件)：<https://github.com/fishjar/kiss-translator> <br>
-PDFMathTranslate (pdf论文翻译): <https://github.com/Byaidu/PDFMathTranslate> <br>
+PDFMathTranslate (pdf论文翻译): <https://github.com/PDFMathTranslate/PDFMathTranslate-next> <br>
 gpt-assistant-android (Android): <https://github.com/Skythinker616/gpt-assistant-android> <br>
 DictTango (Android e-dictionary): <https://github.com/Jimex/DictTango-Android> <br>
 
