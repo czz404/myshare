@@ -52,9 +52,9 @@ gpt-assistant-android (Android): <https://github.com/Skythinker616/gpt-assistant
 DictTango (Android e-dictionary): <https://github.com/Jimex/DictTango-Android> <br>
 
 我的ai模型推荐： <br>
-复杂代码：claude-opus-4.1  ； DeepSeek-V3.1 ; openai o3 <br>
-日常对话：gpt-4.1(多模态支持) ; DeepSeek-V3.1 （图片目前只支持ocr识别文字）<br>
-翻译：gemini-2.0-flash-lite; DeepSeek-V3.1 <br>
+复杂代码：Claude Sonnet 4.5 ；GPT-5-Codex <br>
+日常对话：gpt-5 ; DeepSeek(图片目前只支持ocr识别文字) <br>
+翻译：gemini-2.0-flash-lite; DeepSeek ; Hunyuan-MT-7B<br>
 
 ## AI制图
 ### 可直接编辑
