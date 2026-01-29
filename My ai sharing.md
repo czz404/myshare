@@ -1,6 +1,7 @@
 # 我的AI分享
 
 ## 目录
+
 1. [一些 AI 相关知识介绍](#一些ai相关知识介绍)
 2. [免费使用建议](#免费使用建议)
 3. [付费建议](#付费建议)
@@ -26,6 +27,7 @@ GitHub学生包教程（可在 vscode GitHub copilot 使用辅助编程）： <b
 ## 付费建议
 
 什么时候需要付费？为什么要付费？为什么选择中转站付费？ <br>
+
 1. 直连，付款相对方便，一定程度上避免封号风险（尤其是openai） <br>
 2. 商用避免“降智” （尤其是openai） <br>
 3. 支持在其他软件中调用ai的能力（翻译，润色，代码辅助，概括文章…） <br>
@@ -52,11 +54,12 @@ gpt-assistant-android (Android): <https://github.com/Skythinker616/gpt-assistant
 DictTango (Android e-dictionary): <https://github.com/Jimex/DictTango-Android> <br>
 
 我的ai模型推荐： <br>
-复杂代码：Claude Sonnet 4.5 ；GPT-5-Codex <br>
-日常对话：gpt-5 ; DeepSeek(图片目前只支持ocr识别文字) <br>
-翻译：gemini-2.0-flash-lite; DeepSeek ; Hunyuan-MT-7B<br>
+复杂代码：Claude Opus 4.5 ；GPT-5.2-Codex <br>
+日常对话：gpt-5.2 ; DeepSeek ; Qwen max<br>
+翻译：gemini-2.0-flash-lite ; DeepSeek ; Hunyuan-MT-7B ; Qwen-MT<br>
 
 ## AI制图
+
 ### 可直接编辑
 
 <details>
@@ -64,12 +67,13 @@ DictTango (Android e-dictionary): <https://github.com/Jimex/DictTango-Android> <
 <summary>Mermaid</summary>
 
 基于 JavaScript 的图表绘制工具，可生成多种类型的图表 <br>
+
 - 优点：使用广泛，可以直接粘贴导入draw.io, iauto等绘图软件进行编辑和保存 <br>
 - 缺点：语法严格，ai直接生成的mermaid代码容易有错误 <br>
 
 我的使用体验：可以方便的生成流程图，但常见错误出现在文本部分括号干扰，需要在文本两侧加英文引号 <br>
-eg: ai生成`B --> C([Integrative Analysis<br>(miRNA & DNA Methylation)]) `<br>
-修改为`B --> C(["Integrative Analysis<br>(miRNA & DNA Methylation)"]) `<br>
+eg: ai生成`B --> C([Integrative Analysis<br>(miRNA & DNA Methylation)])`<br>
+修改为`B --> C(["Integrative Analysis<br>(miRNA & DNA Methylation)"])`<br>
 语法检测与在线预览：<https://mermaid.live/> <br>
 
 示意图：<br>
@@ -77,6 +81,7 @@ eg: ai生成`B --> C([Integrative Analysis<br>(miRNA & DNA Methylation)]) `<br>
 
 Prompt (来自linux.do论坛Monster Dump)：<br>
 英文Prompt：<br>
+
 ```
 Visualization: Enhance understanding by integrating visualization. 
 - Use mermaid.js diagram, and it must be ensured that the syntax is correct and verified.
@@ -87,7 +92,9 @@ Visualization: Enhance understanding by integrating visualization.
     2. Always use double quotes in flowchart edges (arrows or lines) labels text. for example: |"text"|.
     3. For numbered steps, use (1) instead of 1.
 ```
+
 中文Prompt：<br>
+
 ```
 可视化: 通过整合可视化来增强理解能力。
 - 要求使用 Mermaid.js diagram, 按需选择图表类型，必须确保语法正确
@@ -97,6 +104,7 @@ Visualization: Enhance understanding by integrating visualization.
   2. 如果是 flowchart 节点，边缘标签中总是使用双引号包住：|"标签文本"|；
   3. 对于编号步骤，使用 (1) 而不是 1. 。
 ```
+
 </details>
 
 <details>
@@ -106,7 +114,7 @@ Visualization: Enhance understanding by integrating visualization.
 SVG stands for Scalable Vector Graphics. <br>
 cherry-studio/deepseek官网/claude官网 可以便捷实现svg预览 <br>
 Prompt: 微信公众号 李继刚 <br>
-在线修改以及导出svg： <https://svgedit.netlify.app/editor/index.html> 
+在线修改以及导出svg： <https://svgedit.netlify.app/editor/index.html>
 
 示意图：<br>
 ![svg 示意图](pic/svgeg.png)
@@ -126,11 +134,12 @@ Graphviz是一个由AT&T实验室启动的开源工具包，用于绘制DOT语�
 
 Prompt:
 [mozi](https://www.yeahhe.online/OneDriveShare/%E5%B0%8F%E8%99%8E%E4%BC%9A%E4%BA%AB/%F0%9F%93%9A%E7%94%B5%E5%AD%90%E4%B9%A6/%F0%9F%92%A1AI%E6%8F%90%E7%A4%BA%E8%AF%8D/Graphviz%E5%9B%BE%E8%A1%A8.html) <br>
-在线预览编辑和分享: <https://edotor.net/> 
+在线预览编辑和分享: <https://edotor.net/>
 
 </details>
 
 ### 不可直接编辑
+
 <details>
 
 <summary>Openai</summary>
@@ -145,9 +154,11 @@ Developers will soon be able to generate images with GPT-4o via the APl, with ac
 评语：有这功夫你自己都做出来了 <br>
 
 手写笔记风格Prompt (Emad分享):
+
 ```
 write a monologue of your real thoughts on making everything studio ghibli style in fountain pen blue ink, on it scrawl corrections in marker pen, they are unhinged, there are doodles and weird oddities scrawled, you cut out and stick on lots and lots of photo extracts from magazines to show the point!!! sometimes you write on them too
 ```
+
 </details>
 
 <details>
@@ -160,18 +171,15 @@ Pollinations.AI is an open-source gen AI startup based in Berlin, providing the 
 
 与deepseek结合 （isinry分享）
 Prompt：<br>
+
 ```
 你现在是一个 ai 图片生成机器人，我给你一些提示，你用你的想象力去生动描述这幅图片，并转换成英文填充到下面 url 的占位符中:
 ![image](https://image.pollinations.ai/prompt/{prompt}?width=1024&height=1024&seed=100&model=flux&nologo=true)
 ```
+
 示意图：<br>
 ![pollinations 示意图](pic/pollinationseg.png)
 
 </details>
 
 欢迎大家指正和补充！<br>
-
-
-
-
-
