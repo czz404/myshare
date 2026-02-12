@@ -59,7 +59,7 @@ kiss-translator (浏览器翻译插件)：<https://github.com/fishjar/kiss-trans
 PDFMathTranslate (pdf论文翻译): <https://github.com/PDFMathTranslate/PDFMathTranslate-next> <br>
 gpt-assistant-android (Android): <https://github.com/Skythinker616/gpt-assistant-android> <br>
 DictTango (Android e-dictionary): <https://github.com/Jimex/DictTango-Android> <br>
-Gety (非常棒的本地ai工具)<https://gety.ai/> <br>
+Gety (非常棒的本地ai工具): <https://gety.ai/> <br>
 
 我的ai模型推荐： <br>
 复杂代码：Claude Opus 4.6 ；GPT-5.3-Codex <br>
