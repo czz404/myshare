@@ -18,19 +18,26 @@ wx公众号：浮之静 ；李继刚 <br>
 
 ## 免费使用建议
 
-我的硅基流动邀请链接（邀请赠送14元平台配额）： <br>
+我的硅基流动邀请链接（邀请赠送16元全平台通用代金券）： <br>
 <https://cloud.siliconflow.cn/i/50jmddg2> <br>
 
-GitHub学生包教程（可在 vscode GitHub copilot 使用辅助编程）： <br>
+GitHub学生包教程（GitHub copilot, 听说现在认证变难了? 可能要花点时间折腾一下）： <br>
 <https://zhuanlan.zhihu.com/p/578964972>  <br>
+
+Vscode在认证GitHub education后使用copilot插件体验还是不错的，选最好的模型开agent模式真的很爽，但上下文长度相比其他 AI IDEs 简直小的可怜，这里推荐参考官方文档让agent帮你自动处理一下 <br>
+<https://code.visualstudio.com/docs/copilot/guides/context-engineering-guide> <br>
 
 ## 付费建议
 
-什么时候需要付费？为什么要付费？为什么选择中转站付费？ <br>
+为什么推荐选择中转站付费？ <br>
 
-1. 直连，付款相对方便，一定程度上避免封号风险（尤其是openai） <br>
-2. 商用避免“降智” （尤其是openai） <br>
-3. 支持在其他软件中调用ai的能力（翻译，润色，代码辅助，概括文章…） <br>
+1. 直连，付款相对方便，一定程度上避免封号风险（毕竟封号了很多情况下钱是不退的） <br>
+2. api属于商用，可以避免网页端 “降智”（尤其是openai） <br>
+3. 支持在提供api接口的软件中调用ai的能力（翻译，润色，代码辅助，概括文章…） <br>
+
+当然你有充足资金选择直接官网付费，或者走team等特殊渠道，或者支持快速迭代不断追赶的优秀国产模型，这都是很好的选择 <br>
+
+中转站可能掺假或者跑路，请慎重投入资金，以下推荐仅代表本人正在使用，不为其能够稳定运行背书 <br>
 
 付费中转站1:<https://burn.hair/> <br>
 （Azure openai ，使用GitHub账户登录） <br>
@@ -52,11 +59,13 @@ kiss-translator (浏览器翻译插件)：<https://github.com/fishjar/kiss-trans
 PDFMathTranslate (pdf论文翻译): <https://github.com/PDFMathTranslate/PDFMathTranslate-next> <br>
 gpt-assistant-android (Android): <https://github.com/Skythinker616/gpt-assistant-android> <br>
 DictTango (Android e-dictionary): <https://github.com/Jimex/DictTango-Android> <br>
+Gety (非常棒的本地ai工具)<https://gety.ai/> <br>
 
 我的ai模型推荐： <br>
-复杂代码：Claude Opus 4.5 ；GPT-5.2-Codex <br>
-日常对话：gpt-5.2 ; DeepSeek ; Qwen max<br>
-翻译：gemini-2.0-flash-lite ; DeepSeek ; Hunyuan-MT-7B ; Qwen-MT<br>
+复杂代码：Claude Opus 4.6 ；GPT-5.3-Codex <br>
+日常对话：gpt-5.2 ; DeepSeek ; qwen3-max <br>
+翻译：gemini-2.0-flash-lite ; DeepSeek ; Hunyuan-MT-7B ; Qwen-MT <br>
+Office 相关：Kimi K2.5 Agent <br>
 
 ## AI制图
 
