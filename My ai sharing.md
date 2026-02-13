@@ -73,6 +73,43 @@ Office 相关：Kimi K2.5 Agent <br>
 
 <details>
 
+<summary>draw.io MCP</summary>
+
+draw.io 官方发布的 MCP (Model Context Protocol) 服务，让 AI 直接生成可编辑的 draw.io 图表 <br>
+仓库地址：<https://github.com/jgraph/drawio-mcp> <br>
+
+官方提供三种使用方式：
+
+| 方式 | 说明 | 安装 |
+|------|------|------|
+| **MCP App Server** | 图表直接内嵌在对话中渲染 | 无需安装，添加远程 MCP `https://mcp.draw.io/mcp` |
+| **MCP Tool Server** | 在浏览器中打开 draw.io 编辑器 | `npx @drawio/mcp` |
+| **Project Instructions** | 无需 MCP，将提示词粘贴到 Claude Project 中 | 无需安装 |
+
+- 优点：生成的图表可直接在 draw.io 中编辑，支持 XML / CSV / Mermaid 三种输入格式，跨客户端通用（Claude、VS Code 等） <br>
+- 缺点：MCP 方式每次请求携带完整工具描述，Token 消耗较大；Tool Server 需要本地安装 Node.js <br>
+
+快速开始（以 Claude Desktop 为例）：在 `claude_desktop_config.json` 中添加：
+```json
+{
+  "mcpServers": {
+    "drawio": {
+      "command": "npx",
+      "args": ["@drawio/mcp"]
+    }
+  }
+}
+```
+
+也可以不装 MCP，使用官方提供的 [Project Instructions](https://github.com/jgraph/drawio-mcp/tree/main/project-instructions)，将提示词粘贴到 Claude Project 即可通过 Python 代码执行生成 draw.io 链接 <br>
+
+示意图：<br>
+![draw.io MCP 示意图](pic/drawiomcp.jpg)
+
+</details>
+
+<details>
+
 <summary>Mermaid</summary>
 
 基于 JavaScript 的图表绘制工具，可生成多种类型的图表 <br>
@@ -147,20 +184,16 @@ Prompt:
 
 </details>
 
-### 不可直接编辑
+### 不可手动编辑
 
 <details>
 
-<summary>Openai</summary>
+<summary>gpt-image/Google nanobanana/PaperBanana...</summary>
 
-官网 GPT-4o （需要ChatGPT Plus ,免费账户有次数和频率限制） api暂时不可用 <br>
-Developers will soon be able to generate images with GPT-4o via the APl, with access rolling out in the next few weeks.
-
+PaperBanana: Automating Academic Illustration for AI Scientists
+<https://dwzhu-pku.github.io/PaperBanana/>
 示意图：<br>
-![GPT-4o 示意图](pic/4oeg.jpg)
-
-可以看出生成一些营销号中无比精致完美的科研图片需要巨量详尽无比的文字描述 <br>
-评语：有这功夫你自己都做出来了 <br>
+![PaperBanana 示意图](pic/PaperBanana_method_diagram.png)
 
 手写笔记风格Prompt (Emad分享):
 
