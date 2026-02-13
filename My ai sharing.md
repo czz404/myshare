@@ -190,8 +190,8 @@ Prompt:
 
 <summary>gpt-image/Google nanobanana/PaperBanana...</summary>
 
-PaperBanana: Automating Academic Illustration for AI Scientists
-<https://dwzhu-pku.github.io/PaperBanana/>
+PaperBanana: Automating Academic Illustration for AI Scientists <br>
+<https://dwzhu-pku.github.io/PaperBanana/> <br>
 示意图：<br>
 ![PaperBanana 示意图](pic/PaperBanana_method_diagram.png)
 
