@@ -13,3 +13,4 @@ For my friends in cuhksz
 - [Mar. 27 2025] Update more information about AI Generate pictures - v0.14
 - [Feb. 12 2026] ai时代依然坚持手搓的文档(逃 - v0.15
 - [Mar. 16 2026] Update models, tools, fix markdown format - v0.16
+- [Mar. 27 2026] Update WSL + Codex CLI guide, AIWave relay config, and tutorial screenshots - v0.17

@@ -6,7 +6,8 @@
 2. [免费使用建议](#免费使用建议)
 3. [付费建议](#付费建议)
 4. [个人推荐](#个人推荐)
-5. [AI 制图](#ai-制图)
+5. [WSL + Codex CLI（Windows）](#wsl--codex-cliwindows)
+6. [AI 制图](#ai-制图)
 
 ## 一些 AI 相关知识介绍
 
@@ -68,6 +69,194 @@ VS Code 在认证 GitHub Education 后，使用 Copilot 插件体验还是不错
 - 日常对话：GPT-5.4；DeepSeek；Qwen3.5系列
 - 翻译（经济型优先）：Gemini Flash Lite；DeepSeek；Hunyuan-MT；Qwen-MT
 - Office 相关：Kimi K2.5 Agent
+
+## WSL + Codex CLI（Windows）
+
+### 1）先在 Windows 开启 WSL 必要功能（管理员 PowerShell）
+
+```powershell
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+
+执行后先重启一次电脑。
+
+### 2）管理员 PowerShell 一键安装 WSL + Ubuntu
+
+```powershell
+wsl --install Ubuntu-24.04 --location D:\WSL\Ubuntu-24.04
+```
+
+装完后重启电脑。
+
+如果你这条命令报错（旧版 WSL 不支持 `--location`），先升级再试：
+
+```powershell
+wsl --update --web-download
+```
+
+### 3）首次进入 Ubuntu（创建用户名和密码）
+
+```powershell
+wsl -d Ubuntu-24.04
+```
+
+按提示创建 Linux 用户名和密码（输入密码时屏幕不显示是正常的）。
+
+### 4）在 WSL 里准备开发目录
+
+下面命令在 Ubuntu 终端执行：
+
+```bash
+mkdir -p ~/code
+cd ~/code
+```
+
+后续项目都放这里，不要长期放在 `/mnt/c/...` 或 `/mnt/d/...`。
+
+### 5）安装 Codex CLI 运行环境（Node.js + npm）
+
+下面命令在 Ubuntu 终端执行：
+
+```bash
+sudo apt update
+sudo apt install -y nodejs npm
+node -v
+npm -v
+```
+
+### 6）安装 Codex CLI
+
+下面命令在 Ubuntu 终端执行：
+
+```bash
+npm install -g @openai/codex
+codex --version
+```
+
+### 7）开始使用 Codex CLI
+
+进入你的项目目录后直接运行：
+
+```bash
+cd ~/code
+codex
+```
+
+### 8）VS Code 装插件
+
+在 Windows 版 VS Code 扩展市场安装：
+
+- `WSL`（Microsoft）
+
+然后在 Ubuntu 终端进入项目目录，直接打开：
+
+```bash
+cd ~/code
+code .
+```
+
+第一次会自动安装 VS Code Server。看到左下角是 `WSL: Ubuntu-24.04`（或你的发行版名）就说明成功了。
+
+如果 `code .` 提示命令不存在：在 Windows 里重装/修复 VS Code 时勾选 **Add to PATH**，然后重开终端再试。
+
+这时你可以直接：
+
+- 打开 WSL 里的 Linux 目录文件
+- 在 VS Code 内使用 Linux 终端
+
+示意图：
+
+![VS Code 连接 WSL 示意图](pic/vscodewsl.png)
+
+### 9）WSL 设置：用可视化 WSL Settings
+
+直接打开 `WSL Settings` 图形界面修改配置即可。
+
+- 推荐先改这 2 项：
+  - `autoMemoryReclaim = gradual`：WSL 空闲时逐步把内存还给 Windows，减少“WSL 吃内存不释放”的体感。
+  - `networkingMode = mirrored`：让 WSL 共享 Windows 网络环境，代理 / VPN / 本机回环访问通常更稳定。
+
+改完后在 PowerShell 执行：
+
+```powershell
+wsl --shutdown
+```
+
+然后重新打开 Ubuntu 即可生效。
+
+示意图：
+
+![WSL Settings 示意图 1](pic/wslsettings1.png)
+
+![WSL Settings 示意图 2](pic/wslsettings2.png)
+
+![WSL Settings 示意图 3](pic/wslsettings3.png)
+
+### 10）Codex CLI 中转站配置（以 AIWave 为例）
+
+下面配置在 WSL 的 Ubuntu 终端里做，不是在 Windows PowerShell 里做。
+
+先编辑用户级配置文件：
+
+```bash
+mkdir -p ~/.codex
+nano ~/.codex/config.toml
+```
+
+可先写成这样：
+
+```toml
+model_provider = "wave"
+model = "gpt-5.4"
+model_reasoning_effort = "medium"
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+cli_auth_credentials_store = "file"
+service_tier = "fast"
+web_search = "live"
+
+[model_providers.wave]
+name = "wave"
+base_url = "https://api.ai-wave.org/v1"
+env_key = "AIWAVE_API_KEY"
+```
+
+然后把 AIWave 的 key 放到环境变量里：
+
+```bash
+echo 'export AIWAVE_API_KEY="你的 AIWave Key"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+再运行：
+
+```bash
+codex
+```
+
+这里有 3 个容易混淆的点：
+
+- `base_url` 只是在告诉 Codex 请求发到哪里，还不等于“已经配置了认证”。
+- 如果你像上面这样使用 AIWave 自己的 key，就要补上 `env_key = "AIWAVE_API_KEY"`；否则 Codex 会把这个 provider 当成“无需认证”的自定义 provider，很多情况下会直接 401。
+- 如果你的中转站支持 OpenAI 认证而不是它自己的 key，也可以把 `env_key` 改成 `requires_openai_auth = true`，然后用 `codex login` 登录；这两种认证方式二选一即可。
+
+关于“联网搜索是不是这样配置后，输入 key 就可以了”，结论是：
+
+- 只配 `base_url` 再“输入 key”还不够，必须把认证方式也写对。
+- Codex 自带的网页搜索和中转站 API 认证不是一回事。按官方文档，`web_search` 默认就是 `cached`；如果想强制用实时网页搜索，可以像上面这样设置 `web_search = "live"`，或者启动时加 `codex --search`。
+- 如果你是想让 Codex 在 `workspace-write` 沙箱里执行的命令也能联网（例如 `npm install`、`pip install`、`curl`），那还要再加：
+
+```toml
+[sandbox_workspace_write]
+network_access = true
+```
+
+官方文档：
+
+- Codex Config basics：<https://developers.openai.com/codex/config-basic>
+- Codex Authentication：<https://developers.openai.com/codex/auth>
+- Codex Configuration reference：<https://developers.openai.com/codex/config-reference>
 
 ## AI 制图
 
