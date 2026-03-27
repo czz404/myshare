@@ -43,8 +43,6 @@ VS Code 在认证 GitHub Education 后，使用 Copilot 插件体验还是不错
 
 中转站可能掺假或者跑路，请慎重投入资金。以下推荐仅代表本人意见，不为其稳定运行背书。
 
-- OpenRouter：<https://openrouter.ai/>
-  - 推荐理由：规模较大，相对可靠。
 - AIWave：<https://www.ai-wave.org/>
   - AFF：<https://www.ai-wave.org/register?aff=WArt>
   - 支持：OpenAI、Claude、Gemini
