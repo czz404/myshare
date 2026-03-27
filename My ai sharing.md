@@ -235,23 +235,6 @@ source ~/.bashrc
 codex
 ```
 
-这里有 3 个容易混淆的点：
-
-- `base_url` 只是在告诉 Codex 请求发到哪里，还不等于“已经配置了认证”。
-- 如果你像上面这样使用 AIWave 自己的 key，就要补上 `env_key = "AIWAVE_API_KEY"`；否则 Codex 会把这个 provider 当成“无需认证”的自定义 provider，很多情况下会直接 401。
-- 如果你的中转站支持 OpenAI 认证而不是它自己的 key，也可以把 `env_key` 改成 `requires_openai_auth = true`，然后用 `codex login` 登录；这两种认证方式二选一即可。
-
-关于“联网搜索是不是这样配置后，输入 key 就可以了”，结论是：
-
-- 只配 `base_url` 再“输入 key”还不够，必须把认证方式也写对。
-- Codex 自带的网页搜索和中转站 API 认证不是一回事。按官方文档，`web_search` 默认就是 `cached`；如果想强制用实时网页搜索，可以像上面这样设置 `web_search = "live"`，或者启动时加 `codex --search`。
-- 如果你是想让 Codex 在 `workspace-write` 沙箱里执行的命令也能联网（例如 `npm install`、`pip install`、`curl`），那还要再加：
-
-```toml
-[sandbox_workspace_write]
-network_access = true
-```
-
 官方文档：
 
 - Codex Config basics：<https://developers.openai.com/codex/config-basic>
